@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MyTasks</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>MyTasks</h1>
-  <p>Hello I am Sandip Shah</p>
+  <div class="login">
+    <div class="left">
+
+      <div class="block">
+        <div class="cube">
+          <span id="day"></span>
+          <span id="date"></span>
+        </div>
+        <div class="cube">
+          <img src="Repo/img1.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="cube">
+          <img src="Repo/img2.jpg" alt="">
+        </div>
+        <div class="cube center">
+          <span id="hour"></span>
+          <!-- <span>:</span> -->
+          <span id="minute"></span>
+        </div>
+      </div>
+
+      <div class="block">
+        <img src="Repo/img3.jpg" alt="">
+      </div>
+    </div>
+    <div class="right">
+      <h1>MyTasks</h1>
+      <p>Personal Organizer</p>
+    </div>
+  </div>
+  <div class="main">
+    <nav>
+      <h1>MyTasks</h1>
+      <input type="text" placeholder="Search" id="search">
+      <span id="userName">Sandip</span>
+    </nav>
+  </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
