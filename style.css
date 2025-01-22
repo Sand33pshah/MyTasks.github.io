@@ -18,16 +18,15 @@ body{
   justify-content: space-around;
   width: 80%;
   height: 90vh;
-  padding: 20px;
-  /* background-color: red; */
 }
 
 img{
-  width: 15rem;
+  width: 13rem;
+  border-radius: 20px;
 }
 
 .left{
-  /* background-color: rgb(127, 81, 81); */
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,15 +41,22 @@ img{
 .cube{
   margin: 10px;
   border-radius: 20px;
-  padding: 20px;
+  padding: 10px;
   background-color: burlywood;
-  width: 15rem;
-  height: 15rem;
+  width: 13rem;
+  height: 13rem;
 }
 
 .cube span{
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: white;
+  font-weight: bolder;
+}
+
+.img{
+  background:transparent;
+  padding: 0;
+  /* margin: 0; */
 }
 
 .center{
@@ -61,10 +67,85 @@ img{
 }
 
 #date{
-  font-size: 10rem;
+  font-size: 8rem;
 }
 
 #hour, #minute {
-  font-size: 8rem;
+  font-size: 6rem;
   
+}
+
+.lastCube img{
+  height: 13rem;
+  width: 28rem;
+}
+
+.right{
+  /* background-color: red; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10px 10px 10px 10%;
+}
+
+.right h1{
+  font-size: 6rem;
+  color: rgb(156, 129, 94);
+}
+
+.right p{
+  font-size: 2rem;
+  color: burlywood;
+}
+
+.right input{
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 2px solid burlywood;
+  border-radius: 10px;
+  outline: none;
+  color: burlywood;
+  font-weight: bolder;
+}
+
+.right input::placeholder{
+  color: burlywood;
+}
+
+.right button{
+  font-size: 1.2rem;
+  padding: 5px 15px;
+  background-color: burlywood;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.main{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(Repo/mainBG.jpg);
+  background-size: cover;
+}
+
+nav{
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  box-shadow: 2px 2px 10px rgb(85, 84, 82);
+  backdrop-filter: blur(2px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  margin-top: 1rem;
+  border-radius: 20px;
+  padding: 20px 0;
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }

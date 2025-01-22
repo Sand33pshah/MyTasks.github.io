@@ -17,13 +17,13 @@
           <span id="day"></span>
           <span id="date"></span>
         </div>
-        <div class="cube">
+        <div class="cube img">
           <img src="Repo/img1.jpg" alt="">
         </div>
       </div>
 
       <div class="block">
-        <div class="cube">
+        <div class="cube img">
           <img src="Repo/img2.jpg" alt="">
         </div>
         <div class="cube center">
@@ -33,21 +33,51 @@
         </div>
       </div>
 
-      <div class="block">
+      <div class="block lastCube">
         <img src="Repo/img3.jpg" alt="">
       </div>
     </div>
+
+
     <div class="right">
       <h1>MyTasks</h1>
       <p>Personal Organizer</p>
+      <br><br><br>
+      <input type="text" placeholder="Enter Your Name" id="name"><br>
+      <button onclick="login()">Submit</button>
     </div>
   </div>
+
+
+
+
   <div class="main">
     <nav>
       <h1>MyTasks</h1>
-      <input type="text" placeholder="Search" id="search">
-      <span id="userName">Sandip</span>
+      <p>Welcome! <span id="userName">Sandip</span></p>
     </nav>
+    <div class="functions">
+      <div class="search">
+        
+      </div>
+      <div class="dates">
+        <div class="date">
+          <span id="date"></span>
+          <span id="day"></span>
+        </div>
+        <div class="time">
+
+        </div>
+      </div>
+      <div class="addTask">
+        <input type="text" id="title" placeholder="Enter Title...">
+        <textarea id="description" placeholder="Enter Details..."></textarea>
+        <button type="submit">Add Task</button>
+      </div>
+    </div>
+    <div class="tasks">
+
+    </div>
   </div>
   <script src="script.js"></script>
 </body>
