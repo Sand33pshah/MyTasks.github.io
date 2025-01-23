@@ -14,8 +14,8 @@
 
       <div class="block">
         <div class="cube">
-          <span id="day"></span>
-          <span id="date"></span>
+          <span id="loginDay"></span>
+          <span id="loginDate"></span>
         </div>
         <div class="cube img">
           <img src="Repo/img1.jpg" alt="">
@@ -27,9 +27,9 @@
           <img src="Repo/img2.jpg" alt="">
         </div>
         <div class="cube center">
-          <span id="hour"></span>
+          <span id="loginHour"></span>
           <!-- <span>:</span> -->
-          <span id="minute"></span>
+          <span id="loginMinute"></span>
         </div>
       </div>
 
@@ -48,36 +48,76 @@
     </div>
   </div>
 
-
-
-
   <div class="main">
     <nav>
       <h1>MyTasks</h1>
       <p>Welcome! <span id="userName">Sandip</span></p>
     </nav>
-    <div class="functions">
-      <div class="search">
-        
-      </div>
-      <div class="dates">
-        <div class="date">
-          <span id="date"></span>
-          <span id="day"></span>
+    <div class="container">
+      <div class="functions">
+        <div class="search">
+          <input type="search" id="search" placeholder="Search...">
         </div>
-        <div class="time">
 
+        <div class="dates">
+          <div class="date">
+            <span id="mainDate"></span>
+            <span id="mainDay"></span>
+          </div>
+          <div class="time">
+            <span id="mainHour"></span>
+            <span id="mainMinute"></span>
+          </div>
+        </div>
+
+        <div class="addTask">
+          <h1>Add Task</h1>
+          <input type="text" id="title" placeholder="Enter Title...">
+          <textarea id="description" placeholder="Enter Details..."></textarea>
+          <button type="submit" id="addTaskBtn">Add Task</button>
         </div>
       </div>
-      <div class="addTask">
-        <input type="text" id="title" placeholder="Enter Title...">
-        <textarea id="description" placeholder="Enter Details..."></textarea>
-        <button type="submit">Add Task</button>
+
+      <div class="tasks">
+        <div class="taskCard">
+          <h2>Title</h2>
+          <p>desc</p>
+          <p><span>23-jan</span> <a href="">Delete</a></p>
+        </div>
+        <div class="taskCard">
+          <h2>Title</h2>
+          <p>escription description description description</p>
+          <p><span>23-jan</span> <a href="">Delete</a></p>
+        </div>
+        <div class="taskCard">
+          <h2>Title</h2>
+          <p>description   description description description description</p>
+          <p><span>23-jan</span> <a href="">Delete</a></p>
+        </div>
+        <div class="taskCard">
+          <h2>Title</h2>
+          <p>description description is am are description</p>
+          <p><span>23-jan</span> <a href="">Delete</a></p>
+        </div>
+        <!-- <div class="taskCard">
+          <h2>Title</h2>
+          <p>description description description description description description description</p>
+          <p><span>23-jan</span> <a href="">Delete</a></p>
+        </div>
+        <div class="taskCard">
+          <h2>Title</h2>
+          <p>description description</p>
+          <p><span>23-jan</span> <a href="">Delete</a></p>
+        </div>
+        <div class="taskCard">
+          <h2>A short intoduction about myself</h2>
+          <p>My name is Sandip Kumar Shah and I am currently working in DGR an government entity which specializes in Hardcore IT infra</p>
+          <p><span>23-jan</span> <a href="">Delete</a></p>
+        </div> -->
       </div>
     </div>
-    <div class="tasks">
 
-    </div>
+
   </div>
   <script src="script.js"></script>
 </body>
